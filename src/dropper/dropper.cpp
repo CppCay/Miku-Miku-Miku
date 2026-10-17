@@ -33,7 +33,7 @@ int main()
 {
         int uid = getuid();
         if (uid != 0) {
-                std::cerr << "ERROR: binary was not launched with root/uid 0\nTo continue, please get root access via tools like doas, or privilege escalation scripts like Copy Fail or Bad Epoll.\nExiting...";
+                std::cerr << "ERROR: binary was not launched with root/uid 0\nExiting...";
                 return EXIT_FAILURE;
         }
 
